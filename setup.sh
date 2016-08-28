@@ -24,6 +24,10 @@ cd elk-workshop
 git submodule update --init --recursive
 git checkout javazone2016
 
+# fix machine time zone
+sudo echo Europe/Oslo > /etc/timezone
+sudo dpkg-reconfigure --frontend noninteractive tzdata
+
 # download and unpack ELK in repo
 chmod u+x setup.sh
 ./setup.sh
