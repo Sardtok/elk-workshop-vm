@@ -42,6 +42,8 @@ The VM has 2 cores by default. If you want to increase performance, you may incr
 
 Open up VirtualBox Manager, and you will find the VM is running (unless you shut it down with `vagrant halt`). Select the VM and click Show to open a desktop environment.
 
+The keyboard configuration is set to a US layout by default. You can change this from the GUI or command line. From the GUI you will find the keyboard configuration in the bottom right corner. Right click `US` and select `Keyboard Layout Handler Settings`, uncheck `Keep Systems Layout` and add your layout in the menu on the left and remove the `US` layout if you want to. From a shell, you can change the Systems Layout with `sudo dpkg-reconfigure keyboard-configuration`. This will take you through a configuration wizard, the 105 key layout should work for most, then change the language in the next couple of menus and leave the rest at their defaults.
+
 ### SSH
 
 You can use the SSH client provided by Vagrant by running `vagrant ssh`, but you can also manually connect using your favourite SSH client. You should be able to connect to it with the user `vagrant` on the IP address `192.168.13.37` with the password `vagrant`.
