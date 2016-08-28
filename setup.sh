@@ -33,5 +33,7 @@ chmod u+x setup.sh
 ./setup.sh
 
 # fix permissions
-cd /home/vagrant
-chown -R vagrant:vagrant elk-workshop
+chown -R vagrant:vagrant /home/vagrant/elk-workshop
+
+# add LAPD_HOME to environment variables
+echo export LAPD_HOME=/home/vagrant/elk-workshop/logstash/pipelines/lapd >> /home/vagrant/.profile
