@@ -32,3 +32,6 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 chmod u+x setup.sh
 ./setup.sh
 
+# fix permissions
+cd /home/vagrant
+chown -R vagrant:vagrant elk-workshop
