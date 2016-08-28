@@ -3,8 +3,8 @@ Vagrant.configure(2) do |config|
   config.vm.box = "mast3rof0/lubuntu32"
 
   config.vm.provider "virtualbox" do |v|
-    # v.memory = 4096
-    # v.cpus = 2
+    v.memory = 3072
+    v.cpus = 2
   end
 
   config.vm.hostname = "elk-workshop"
@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
   # https://github.com/dotless-de/vagrant-vbguest/issues/189
   #
   # Uncomment the following (change version if necessary)
-  # config.vbguest.auto_update = true
+  config.vbguest.auto_update = true
 
   # Configure provisioning with shell scripts:
   # Allow piping to accept Oracle license
