@@ -5,6 +5,8 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |v|
     v.memory = 3072
     v.cpus = 2
+    v.customize ["modifyvm", :id, "--usb", "on"]
+    v.customize ["modifyvm", :id, "--usbehci", "off"]
   end
 
   config.vm.hostname = "elk-workshop"
@@ -21,7 +23,7 @@ Vagrant.configure(2) do |config|
   # https://github.com/dotless-de/vagrant-vbguest/issues/189
   #
   # Uncomment the following (change version if necessary)
-  config.vbguest.auto_update = true
+  # config.vbguest.auto_update = true
 
   # Configure provisioning with shell scripts:
   # Allow piping to accept Oracle license
