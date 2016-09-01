@@ -15,11 +15,14 @@ sudo apt-get install -y git
 # editors
 sudo apt-get install -y vim-gtk emacs24
 
-# update packages in general
+# update firefox (for improved performance)
+sudo apt-get --purge --reinstall install firefox
+
+# update packages in general (takes a long time)
 # sudo apt-get upgrade -y
 
 # get our repo
-git clone --recursive https://github.com/Sardtok/elk-workshop/
+git clone --recursive https://github.com/mbertani/elk-workshop/
 cd elk-workshop
 git submodule update --init --recursive
 git checkout javazone2016
