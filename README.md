@@ -5,7 +5,7 @@ This repository contains setup files for a virtual machine using Vagrant and Vir
 ## Setup
 
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Install [Vagrant](https://www.vagrantup.com/)
+2. Install [Vagrant](https://www.vagrantup.com/). If you already have vagrant installed, make sure it's newer than v1.7.0.
 3. If you have Git, clone this repository. Otherwise download the content as a ZIP archive and unpack it somewhere.
 4. Open a command line interface/shell (PowerShell or Cmd on Windows, Terminal on Mac, your favourite terminal emulator on Linux)
 5. Change directory to the location of this repository's files.
